@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ENCRIPTADOR</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+ <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
+  </head>
+  <body>
+    <div class="container">
+      <div class="encriptar">
+        <textarea
+          name="texto"
+          class="texto"
+          id="texto"
+          cols="30"
+          rows="10"
+          placeholder="Ingresa tu texto aquí"
+        ></textarea>
+
+        <div class="terminos">
+          <p>Por favor, solo letras minúsculas y sin acentos.</p>
+        </div>
+        <div class="botones">
+          <button class="btn-encriptar" type="button" onclick="encriptar()">
+            ENCRIPTAR
+          </button>
+          <button class="btn-desencriptar" type="button" onclick="desencriptar()">
+            DESENCRIPTAR 
+        </button>
+        </div>
+      </div>
+      <div class="encriptado">
+        <img src="imgs/spiderman.png" alt="diseño de spiderman" id="spider" />
+        <div class="mensaje-encriptado" id="mensaje-encriptado">
+          <h2 id="titulo-mensaje">Todavía no hay mensajes</h2>
+          <p id="parrafo">
+            Ingresa el texto que deseas encriptar o desencriptar
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
